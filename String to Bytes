@@ -1,0 +1,3 @@
+text = "WsCube Tech"
+bytes_data = text.encode('utf-8')  
+print(bytes_data)
