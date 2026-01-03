@@ -1,0 +1,19 @@
+def is_prime(number):
+  if number > 1:
+    for i in range(2,number):
+      if (number % i) == 0:
+        return False
+    return True
+  else:
+    return False
+
+lower_limit = int(input("Enter the lower limit of the range: "))
+upper_limit = int(input("Enter the upper limit of the range: "))
+
+if upper_limit <= lower_limit:
+  print("The upper limit should be greater than the lower limit")
+
+print(f"Numbers that are prime in the range ({lower_limit},{upper_limit}) are:")
+for number in range(lower_limit,upper_limit+1):
+  if is_prime(number):
+    print(number,end=" ")
