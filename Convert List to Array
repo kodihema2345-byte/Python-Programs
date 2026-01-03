@@ -1,0 +1,9 @@
+import array
+
+# A Python list
+my_list = [1, 2, 3, 4, 5]
+
+# Convert list to array of integers using array module
+my_array = array.array('i', my_list)
+
+print(my_array)
